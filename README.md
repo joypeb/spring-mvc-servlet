@@ -23,3 +23,13 @@ username=park&age=20
   - `request.getSession(create:true)`
 - HttpServletRequest, HttpServletResponse를 사용할 때 가장 중요한 점은 이 객체들이 HTTP요청 메시지 HTTP응답 메시지를 편리하게 사용하도록 도와주는 객체라는 점이다.
 따라서 이 기능에 대해서 깊이있는 이해를 하려면 HTTP스펙이 제공하는 요청, 응답 메시지 자체를 이해해야한다
+
+### HTTP요청 데이터
+- GET - 쿼리 파라미터
+- POST - HTML Form
+  - content-type : application/x-www-form-urlencoded
+  - 메시지 바디에 쿼리 파라미터 형식으로 전달
+- HTTP message body
+  - HTTP API에서 주로 사용 : JSON, XML, TEXT
+- 데이터 형식은 주로 JSON사용
+  - POST, PUT, PATCH
