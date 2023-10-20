@@ -33,3 +33,15 @@ username=park&age=20
   - HTTP API에서 주로 사용 : JSON, XML, TEXT
 - 데이터 형식은 주로 JSON사용
   - POST, PUT, PATCH
+
+### PrintWriter와 템플릿 엔진
+HttpServletResponse에서 응답으로 사용 가능한 `PrintWriter`에 모든 HTML을 넣어서 응답하기에는 너무 불편하고 가독성이 떨어진다
+그렇기때문에 우리가 사용하는 기존 HTML에서 자바 코드를 넣을 수 있는 템플릿 엔진이 등장하게 되었다
+템플릿 엔진을 사용하게되면 HTML문서에서 필요한 곳에만 코드를 넣을 수 있기때문에 동적으로 HTML을 관리할 수 있고 가독성도 좋아지게 된다.
+- JSP
+  - 가장 많이 사용했던 템플릿 엔진. 현재는 성능도 다른 템플릿 엔진에 비해 낮고, JAR가 아닌 WAR사용한다는 점에서 점점 사용하지 않게 되고있다
+- Thymeleaf
+  - 현재 가장 많이 사용하는 템플릿 엔진. 좋은 가독성과 성능을 가지고있다
+- Mustache
+  - Thymeleaf보다 더 경량화된 템플릿 엔진
+
